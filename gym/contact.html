@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Pacifico&family=Tangerine&family=Yellowtail&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2b4134f0c7.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Tangerine&family=Yellowtail&display=swap" rel="stylesheet">
+    <title>contact us</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0;
+            box-sizing:border-box;
+        }
+        header{
+            background-color: black;
+            width: 100%;
+            position: relative;
+            height: 11vh;
+        }
+        nav{
+         display: block;
+         width: 50%;
+        }
+        h3{
+            float: left;
+            border: none;
+            border-radius:50%;
+            background-color: yellow;
+            color: black;
+            padding:10px;
+            text-align: center;
+            margin:10px 50px;
+        }
+        h3 a{
+            text-decoration: none;
+            color: black;
+        }
+        .nav-main{
+            margin-left: 50%;
+            
+        }
+        .nav-main li{
+         display: inline-block;
+         padding:0px 30px;
+         align-items: right;
+         color: white;
+         margin: 15px 30px;
+         font-size: 20px;
+        }
+        .nav-main a{
+            color: white;
+            text-decoration: none;
+            
+        }
+        .nav-main a:hover{
+        
+            color:brown;
+        }
+        #home{
+            border: none;
+            background-color: teal;
+            border-radius: 30px;
+            padding: 8px 20px;
+        }
+        .main{
+            background-image:url(baclground.jpg) ;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            display: inline-block;
+        
+        }
+        .main h1{
+            text-align:center ;
+            color: burlywood;
+            font-size: 80px;
+            padding-top:20px ;
+            font-family:'Tangerine',cursive;
+        }
+        .form{
+            width: 50%;
+            float: left;
+        }
+        form{
+            color: white;
+            position: relative;
+            border: none;
+            background-color: white;
+            padding:0px;
+            margin:20px 100px;
+            text-align: center;
+            display: inline-block;
+            box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+            border-radius: 15px;
+            background-color: rgba(255,255,255,0.1);
+            overflow: hidden;
+            justify-content: center;
+            border-top: 1px solid rgba(255,255,255,0.5);
+            border-left: 1px solid rgba(255,255,255,0.5);
+            backdrop-filter: blur(5px);
+        }
+        #con{
+            font-size: 50px;
+            font-family: 'Allura', cursive;
+            display: block;
+            text-align: center;
+            padding:30px;
+            padding-bottom: 10px;
+
+        }
+        #detial{
+            margin: 20px;
+            font-size: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+             align-items: right;
+        }
+        input[type="text"],
+        select,textarea{
+            font-family: cursive;
+            border-radius: 5px;
+            border: none; 
+            border-bottom: 1px solid white;
+            background-color:rgb(100, 96, 96);
+            backdrop-filter: blur(5px);
+            overflow: hidden;
+            padding: 6px;
+            width: 75%;
+            margin: 30px,10px;
+            
+        }
+        
+        #choice{
+            margin: 20px;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #submit{
+            border: none;
+            background-color:rgb(68, 224, 245);
+            border-radius: 30px;
+            padding: 8px 20px;
+            margin: 20px 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .section{
+            width: 50%;
+            float: right;
+        }
+        .section-left {
+            
+            color: white;
+            position: relative;
+            border: none;
+            background-color: white;
+            padding:0px;
+            margin:10px 100px;
+            text-align: center;
+            
+            box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+            border-radius: 15px;
+            background-color: rgba(255,255,255,0);
+            overflow: hidden;
+            justify-content: center;
+           
+            border-left: 1px solid rgba(255,255,255,0.5);
+           
+           
+        }
+        .section-left p{
+            font-size: 30px;
+            padding: 30px;
+            margin: 20px;
+        }
+        .fas{
+            font-size: 80px;
+            padding: 40px;
+            color:yellow;
+        }
+footer{
+    background-color: rgb(3, 3, 3);
+   margin-top:-5px;
+   box-sizing: border-box;
+  padding: 70px;
+  padding-bottom: 30px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.right{
+    
+    
+    font-size: 30px;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+    width: 50%;  
+    
+}
+.right li{
+    color: white;
+    padding: 20px;
+    list-style-type:none;
+}
+.right a{
+    text-decoration: none;
+    color: white;
+}
+.right a:hover{
+color: turquoise;
+transition: all 0.2s ease;
+
+}
+.left{
+    
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 50%; 
+}
+.left li{
+    color: white;
+    padding: 20px;
+    list-style-type:none;
+}
+.left a{
+    text-decoration: none;
+    color: white;
+}
+.left a:hover{
+    color: turquoise;
+    transition: all 0.2s ease;
+}
+h5{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+.social{
+    text-align: center;
+}
+.fa{
+    text-align: center;
+    font-size: 30px;
+    padding:20px;
+    margin: 20px;
+    border-radius: 50%;
+    color: black;
+    text-decoration: none;
+}
+.social a{
+    background-color: white;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+.social a:hover{
+    transform: translate(0,-5px);
+
+}
+.fa-facebook:hover{
+    background: #3B5998;
+  }
+  
+  .fa-twitter:hover{
+    background: #7ac4fc;
+    
+  }
+  
+  .fa-instagram:hover{
+    background:#f03ac8;
+    
+  }
+  
+  .fa-linkedin:hover{
+    background: #1900fa;
+
+  }
+  .copy{
+    background-color: rgb(77, 71, 71);
+    font-size: 20px;
+  }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h3><a href="index.html">DG</a></h3>
+        </nav>
+        <div class="nav-main">
+            <ul>
+                <li id="home"><a href="index.html">Home</a></li>
+                <li><a href="#">Price</a></li>
+                <li><a href="#">feedback</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class=main>
+            <h1>Contact Us</h1>
+            <div class="form">
+                <form>
+                    <label id="con">Contact Form</label><br>
+                 <div class="boder">
+                       <label id="detial">select</label>
+                       <input type="radio" name="type" ><label id="choice">Customer</label>
+                     <input type="radio" name="type" ><label id="choice">Brand</label><br><br>
+                     <label id="detial">First name</label>
+                     <input type="text">
+                     <br><br>
+                     <label id="detial"> Email </label><br>
+                     <input type="text">
+                     <br><br>
+                     <label id="detial">Query related</label>
+                     <select style="font-size: 20px;">
+                        <option>Brand Tieup</option>
+                        <option>Customer</option>
+                        <option>Bug report</option>
+                     </select>
+                     <br><br>
+                  </div>
+                    <label id="detial">Message:</label><br><br>
+                    <textarea style="width:300px;height: 100px;"></textarea><br>
+                    <input type="submit" name="" id="submit">
+                </form>
+            </div>
+            <div class="section">
+              <div class="section-left">
+                    <a href="#" class="fas fa-users"></a>
+                   <P>We love to hear from our adoring fans, but feel free to fling tomatoes in our direction if you must. We have some vegetarians on staff that we feed those to (if they're not too badly damaged).</P>
+                </div>
+             </div> 
+        </div> 
+    </main>
+    <footer>
+        <div class="row">
+            
+            <div class="right">
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                  </ul>
+              </div>
+              <div class="left">
+                  <ul>
+                      <li><a href="#">Price</a></li>
+                      <li><a href="#">Feedback</a></li>
+                  </ul>
+              </div>     
+          </div>
+          <div class="fol">
+              <center>
+              <hr style="width: 25%; margin-top: 20px;"></center>
+              <h5>Follow:</h5>
+              <div class="social">
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="#" class="fa fa-twitter"></a>
+                  <a href="#" class="fa fa-instagram"></a>
+                  <a href="#" class="fa fa-linkedin"></a>
+              </div>
+
+          </div>
+        </div>
+      </footer>
+      <div class="copy">
+        <center><span>&#169;Copyright 1999-2021 <br> All Rights Reserved.</span></center>
+      </div>
+
+</body>
+</html>
